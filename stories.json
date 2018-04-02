@@ -1,0 +1,83 @@
+{
+    "stories" : [{
+        "userId": 1,
+        "id": 1,
+        "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+        "description": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+        "url": "http://placehold.it/600/771796",
+        "thumbnailUrl": "http://placehold.it/150/771796"
+      },
+      {
+        "userId": 2,
+        "id": 2,
+        "title": "qui est esse",
+        "description": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
+        "url": "http://placehold.it/600/51aa97",
+        "thumbnailUrl": "http://placehold.it/150/51aa97"
+      },
+      {
+        "userId": 2,
+        "id": 3,
+        "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
+        "description": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut",
+        "url": "http://placehold.it/600/45601a",
+        "thumbnailUrl": "http://placehold.it/150/45601a"
+      },
+      {
+        "userId": 3,
+        "id": 4,
+        "title": "eum et est occaecati",
+        "description": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit",
+        "url": "http://placehold.it/600/e924e6",
+        "thumbnailUrl": "http://placehold.it/150/e924e6"
+      },
+      {
+        "userId": 2,
+        "id": 5,
+        "title": "nesciunt quas odio",
+        "description": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque",
+        "url": "http://placehold.it/600/771796",
+        "thumbnailUrl": "http://placehold.it/150/771796"
+      },
+      {
+        "userId": 3,
+        "id": 6,
+        "title": "dolorem eum magni eos aperiam quia",
+        "description": "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae",
+        "url": "http://placehold.it/600/d32776",
+        "thumbnailUrl": "http://placehold.it/150/d32776"
+      },
+      {
+        "userId": 4,
+        "id": 7,
+        "title": "magnam facilis autem",
+        "description": "dolore placeat quibusdam ea quo vitae\nmagni quis enim qui quis quo nemo aut saepe\nquidem repellat excepturi ut quia\nsunt ut sequi eos ea sed quas",
+        "url": "http://placehold.it/600/f66b97",
+        "thumbnailUrl": "http://placehold.it/150/f66b97"
+      },
+      {
+        "userId": 5,
+        "id": 8,
+        "title": "dolorem dolore est ipsam",
+        "description": "dignissimos aperiam dolorem qui eum\nfacilis quibusdam animi sint suscipit qui sint possimus cum\nquaerat magni maiores excepturi\nipsam ut commodi dolor voluptatum modi aut vitae",
+        "url": "http://placehold.it/600/56a8c2",
+        "thumbnailUrl": "http://placehold.it/150/56a8c2"
+      },
+      {
+        "userId": 3,
+        "id": 9,
+        "title": "nesciunt iure omnis dolorem tempora et accusantium",
+        "description": "consectetur animi nesciunt iure dolore\nenim quia ad\nveniam autem ut quam aut nobis\net est aut quod aut provident voluptas autem voluptas",
+        "url": "http://placehold.it/600/b0f7cc",
+        "thumbnailUrl": "http://placehold.it/150/b0f7cc"
+      },
+      {
+        "userId": 2,
+        "id": 10,
+        "title": "optio molestias id quia eum",
+        "description": "quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error",
+        "url": "http://placehold.it/600/54176f",
+        "thumbnailUrl": "http://placehold.it/150/54176f"
+      }
+    ]
+}

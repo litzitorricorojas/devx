@@ -1,0 +1,32 @@
+<h3>Inputs Basicos</h3>
+<div id="holaMundo" [innerText]="holaMundo">Hola Mundo</div>
+
+<form>
+  <input name="prueba " type="text" [(ngModel)]="holaMundo">
+</form>
+
+<div>
+  <code>{{holaMundo}}</code>
+</div>
+
+<div>
+  <mat-form-field>
+    <input matInput
+          [placeholder]="holaMundo"
+          type="text"
+          (keyup)="keyUp($event)"
+          (blur)="blur($event)">
+  </mat-form-field>
+</div>
+
+<h3>Prefijos y Sufijos</h3>
+<div>
+  <mat-form-field>
+    <span matPrefix>+591</span>
+    <input matInput type="text" placeholder="Telefono">
+    <!-- <span matSuffix>(s)</span> -->
+    <mat-hint>Numero de telefono en Bolivia</mat-hint>
+  </mat-form-field>
+</div>
+
+<button (click)="doLogin()" >Login</button>

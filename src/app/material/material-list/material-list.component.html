@@ -1,0 +1,16 @@
+<!-- <devx-title></devx-title> -->
+<!-- <mat-list *ngIf="curso.length !== 0"> -->
+<mat-list *ngIf="curso.length !== 0;else cursoVacio">
+  <devx-curso *ngFor="let c of curso" (onClick)="selectedCurso($event)"
+              [active]="c.active" [curso]="c">
+  </devx-curso>
+</mat-list>
+<!-- <div *ngIf="curso.length === 0"> -->
+<ng-template #cursoVacio>
+    <div>
+      <label>No existen cursos disponibles</label>
+    </div>
+</ng-template>
+
+
+<!-- <devx-footer></devx-footer> -->

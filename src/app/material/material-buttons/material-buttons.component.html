@@ -1,0 +1,50 @@
+<h3>Botones normales</h3>
+<div>
+  <button mat-button>Hola mundo</button>
+  <button mat-button color="primary">
+    Boton Primario
+  </button>
+</div>
+
+<h3>Botones con Relieve</h3>
+<div>
+  <button mat-raised-button>
+    Boton Basico
+  </button>
+  <button mat-raised-button color="primary">
+    Boton Primario
+  </button>
+</div>
+
+<h3>Botones con Iconos</h3>
+<div>
+  <button mat-icon-button>
+    <mat-icon>home</mat-icon>
+  </button>
+
+  <button mat-icon-button>
+    <mat-icon color="primary">home</mat-icon>
+  </button>
+</div>
+
+<h3>Botones Flotantes</h3>
+<div>
+  <button mat-fab>
+      <mat-icon>add_circle</mat-icon>
+  </button>
+  <button mat-fab color="primary">
+      <mat-icon>add</mat-icon>
+  </button>
+</div>
+
+<h3>Interpolacion</h3>
+<div>
+  <label>curso: {{curso.codigo}} |  {{curso.titulo}}</label>
+</div>
+<div>
+  <label>cursoAngular: {{cursoAngular}}</label>
+</div>
+
+<code>
+  {{curso | json}}
+</code>
