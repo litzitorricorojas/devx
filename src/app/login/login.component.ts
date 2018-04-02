@@ -8,9 +8,15 @@ import { Router } from '@angular/router';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
-  constructor(private router: Router) { }
-  ngOnInit() {
-      console.log('init component login');
+export class LoginComponent {
+  model: any ;
+  constructor(private router: Router) {
+    this.model = {
+      'username': '',
+      'password': ''
+    };
+  }
+  onSubmit() {
+      this.router.navigate(['/stories']);
   }
 }

@@ -6,10 +6,31 @@
 
  </div>
  <div class="box">
-
- </div>
- <div>
-   <button disabled="disabled"> Cancel </button>
-   <button disabled="disabled"> Save </button>
+    <div class="box">
+        <form (ngSubmit)="onSubmit()" #newForm="ngForm">
+            <div class="">
+              <label for="">Title</label>
+              <input type="text" [(ngModel)]="storie.title"
+                     #title="ngModel" name="title" required>
+            </div>
+            <div class="">
+                <label for="">Description</label>
+                <input type="text" [(ngModel)]="storie.description"
+                       #description="ngModel" name="description" required>
+            </div>
+            <div class="">
+                <label for="">Picture Url</label>
+                <input type="text" [(ngModel)]="storie.url"
+                       #url="ngModel" name="url" required>
+            </div>
+            <div class="">
+                <label for="">Content</label>
+                <input type="text" [(ngModel)]="storie.description"
+                       #description="ngModel" name="description" required>
+            </div>
+            <button mat-raised-button color="warn" (click)="onCancel()">Cancel</button>
+            <button mat-raised-button type="submit" [disabled]="newForm.invalid"> Save </button>
+          </form> 
+    </div>
  </div>
 </div>

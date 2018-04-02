@@ -1,3 +1,28 @@
-<p>
-  stories-new works!
-</p>
+<div class="container-edit">
+    <h3 class="title">
+       Add New Artitle
+    </h3>
+    <div class="image">
+    </div>
+    <div class="box">
+        <form (ngSubmit)="onSubmit()" #newForm="ngForm">
+            <div class="">
+              <label for="">Title</label>
+              <input type="text" [(ngModel)]="model.title"
+                     #title="ngModel" name="title" required>
+            </div>
+            <div class="">
+                <label for="">Description</label>
+                <input type="text" [(ngModel)]="model.description"
+                       #description="ngModel" name="description" required>
+            </div>
+            <div class="">
+                <label for="">Picture Url</label>
+                <input type="text" [(ngModel)]="model.url"
+                       #url="ngModel" name="url" required>
+            </div>
+            <button mat-raised-button color="warn" (click)="onCancel()">Cancel</button>
+            <button mat-raised-button type="submit" [disabled]="newForm.invalid"> Crear </button>
+          </form> 
+    </div>
+</div>
