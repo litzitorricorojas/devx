@@ -1,28 +1,43 @@
-<div class="container-edit">
+<div class="container">
     <h3 class="title">
        Add New Artitle
     </h3>
-    <div class="image">
+    <div class="wrapper-new">
+            <div class="center">
+                <img class="circle-image">
+            </div>
+            <div class="box">
+                <form (ngSubmit)="onSubmit()" #newForm="ngForm">
+                    <div class="">
+                        <label for="title">Title</label>
+                        <input class="form-control" type="text" [(ngModel)]="model.title"
+                                #title="ngModel" name="title" required>
+                        <div *ngIf="title.errors && (title.dirty || title.touched)">
+                           Required field
+                        </div>       
+                    </div>
+                    <div class="">
+                        <label for="">Description</label>
+                        <input class="form-control" type="text" [(ngModel)]="model.description"
+                                #description="ngModel" name="description" required>
+                        <div *ngIf="description.errors && (description.dirty || description.touched)">
+                                Required field
+                        </div>   
+                    </div>
+                    <div class="">
+                        <label for="">Picture Url</label>
+                        <input class="form-control" type="text" [(ngModel)]="model.url"
+                                #url="ngModel" name="url" required>
+                        <div *ngIf="url.errors && (url.dirty || url.touched)">
+                                Required field
+                        </div>   
+                    </div>
+                </form> 
+            </div>
     </div>
-    <div class="box">
-        <form (ngSubmit)="onSubmit()" #newForm="ngForm">
-            <div class="">
-              <label for="">Title</label>
-              <input type="text" [(ngModel)]="model.title"
-                     #title="ngModel" name="title" required>
-            </div>
-            <div class="">
-                <label for="">Description</label>
-                <input type="text" [(ngModel)]="model.description"
-                       #description="ngModel" name="description" required>
-            </div>
-            <div class="">
-                <label for="">Picture Url</label>
-                <input type="text" [(ngModel)]="model.url"
-                       #url="ngModel" name="url" required>
-            </div>
-            <button mat-raised-button color="warn" (click)="onCancel()">Cancel</button>
-            <button mat-raised-button type="submit" [disabled]="newForm.invalid"> Crear </button>
-          </form> 
+    <div class="center">
+        <button mat-raised-button color="warn" (click)="onCancel()">Cancel</button>
+        <button mat-raised-button type="submit" [disabled]="newForm.invalid"> Crear </button>
     </div>
+
 </div>

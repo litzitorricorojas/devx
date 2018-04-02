@@ -1,10 +1,9 @@
-
 <div class="">
-    <div class="">
-        <h2>Today's top Stories</h2>
-        <button (click)="addStorie()" mat-fab color="accent" class="add-button bottom_add">
-            <mat-icon>add</mat-icon>
-        </button>
-    </div>
-    <devx-stories-item *ngFor="let g of storie" [source]="g"></devx-stories-item>
+    <h2>Today's top Stories</h2>
+    <button (click)="addStorie()" mat-fab color="accent" class="add-button bottom_add">
+        <mat-icon>add</mat-icon>
+    </button>
+</div>
+<div class="wrapper">
+    <devx-stories-item *ngFor="let g of storie" [source]="g" class="border-box"></devx-stories-item>
 </div>

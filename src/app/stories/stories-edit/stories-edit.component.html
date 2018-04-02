@@ -2,34 +2,41 @@
  <h3 class="title">
     Edit " {{ storie.title}} "
  </h3>
- <div class="image">
-
- </div>
  <div class="box">
     <div class="box">
         <form (ngSubmit)="onSubmit()" #newForm="ngForm">
-            <div class="">
-              <label for="">Title</label>
-              <input type="text" [(ngModel)]="storie.title"
-                     #title="ngModel" name="title" required>
+            <div class="wrapper-edit">
+                <div class="center">
+                    <img class="circle-image" [src]=storie.thumbnailUrl> 
+                </div>
+                <div class="box-edit">
+                    <div>
+                        <label for="">Title</label>
+                        <input type="text" [(ngModel)]="storie.title"
+                                #title="ngModel" name="title" required>
+                    </div>
+                    <div>
+                        <label for="">Description</label>
+                        <input type="text" [(ngModel)]="storie.description"
+                            #description="ngModel" name="description" required>
+                    </div>
+                    <div>
+                        <label for="">Picture Url</label>
+                        <input type="text" [(ngModel)]="storie.url"
+                            #url="ngModel" name="url" required>
+                    </div>
+                    <div>
+                        <label for="">Content</label>
+                        <input type="text" [(ngModel)]="storie.description"
+                            #description="ngModel" name="description" required>
+                    </div>
+                </div>
             </div>
-            <div class="">
-                <label for="">Description</label>
-                <input type="text" [(ngModel)]="storie.description"
-                       #description="ngModel" name="description" required>
+            <div class="center">
+                    <button mat-raised-button color="warn" (click)="onCancel()">Cancel</button>
+                    <button mat-raised-button type="submit" [disabled]="newForm.invalid"> Save </button>
             </div>
-            <div class="">
-                <label for="">Picture Url</label>
-                <input type="text" [(ngModel)]="storie.url"
-                       #url="ngModel" name="url" required>
-            </div>
-            <div class="">
-                <label for="">Content</label>
-                <input type="text" [(ngModel)]="storie.description"
-                       #description="ngModel" name="description" required>
-            </div>
-            <button mat-raised-button color="warn" (click)="onCancel()">Cancel</button>
-            <button mat-raised-button type="submit" [disabled]="newForm.invalid"> Save </button>
+            
           </form> 
     </div>
  </div>

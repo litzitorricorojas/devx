@@ -1,0 +1,16 @@
+
+.box-image{  
+    height:100px;
+    width:100px;  
+    padding: 2em;
+}
+.circle-image{
+    border-radius: 50% 50%;
+}
+
+.wrapper-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 240px 350px;
+}

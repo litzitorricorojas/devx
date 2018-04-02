@@ -1,11 +1,19 @@
 <div class="">
-   <div class="">
-       {{ source.userId }}
-       {{ source.title }}
-       {{ source.body }}
-       {{ source.thumbnailUrl }}
+   <div class="" (click)="editGiphy(source)" >
+        <div class="wrapper-box">
+            <div class="box-image">
+                    <img class="circle-image" [src]=source.thumbnailUrl> 
+            </div> 
+            <div>
+                <h4> {{ source.title }} </h4>
+                <p>
+                    {{ source.description }} 
+                </p>
+                <span>
+                    <mat-icon svgIcon="thumbs-up"></mat-icon>
+                    {{ source.userId }}
+                </span>
+                
+            </div>
    </div> 
-   <div class="">
-        <button (click)="editGiphy(source)" mat-button>Edit</button>
-   </div>
 </div>

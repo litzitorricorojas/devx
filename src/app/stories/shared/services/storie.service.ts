@@ -18,6 +18,9 @@ export class StorieService {
     return this.http.get<Storie>(this.URL + '/' + id);
   }
 
+  postGif(git: Storie): Observable<Storie> {
+    return this.http.post<Storie>(this.URL, git);
+  }
   updateGif(gif: Storie): Observable<Storie> {
     return this.http.put<Storie>(this.URL + '/' + gif.id, gif);
   }
